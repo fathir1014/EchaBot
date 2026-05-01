@@ -2,3 +2,4 @@ matplotlib
 pandas
 groq
 streamlit
+python-dotenv

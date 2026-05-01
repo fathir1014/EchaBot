@@ -2,10 +2,12 @@ import os
 from dotenv import load_dotenv
 from groq import Groq
 import json
+import streamlit as st
 
 load_dotenv()
 
-client = Groq(api_key=os.getenv("API_KEY"))
+# client = Groq(api_key=os.getenv("API_KEY"))
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 SYSTEM_PROMPT = """
 You are an AI data analyst assistant.
